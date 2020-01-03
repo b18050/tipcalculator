@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my calculator</title>
+</head>
+
+<body>
+	<link rel="stylesheet" type="text/css" href="mycalc.css">
+	
+	<div  id="container">
+	<h1> Tip Calculator </h1>
+	<div  id="calculator">
+		<form>
+			<p>
+				What is your room rent?
+			</p>
+				<p>
+					$ <input id="rent" type="text" placeholder="Room Rent">
+				</p>
+					<p>How is your living experience?</p>
+					<p>
+					<select id="livingService">
+						<option >-- Choose an Option--</option>
+						<option value= "0.50">90&#37; &#45; Outstanding </option>
+						<option value= "0.30">75&#37; &#45; Good </option>
+						<option value= "0.20">60&#37; &#45; It was OK. </option>
+						<option value= "0.10">50&#37; &#45; Bad </option>
+						<option value= "0.02">25&#37; &#45; Terrible </option>
+					</select>
+				    </p>
+				
+			
+			<p>
+				How many people are sharing the room?
+			</p>
+			<input id="pplno" type="text" placeholder="Number of People">people
+		</form>
+		<button type="button" id="calculate">Calculate!</button>
+	</div>
+	<!-- calculator end-->
+	<div id="totalTip">
+		<sup>$</sup><span id="tip">0.00</span>
+		<small id="each">each</small>
+	</div>
+	<!--totalTip end -->
+</div>
+<!-- container end -->
+
+
+<script type="text/javascript" src="mycalc.js"></script> 
+		
+</body>
+
+</html>
